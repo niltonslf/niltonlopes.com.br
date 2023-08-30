@@ -5,9 +5,9 @@ export default function Home() {
   const experiences = Array.from(new Array(4));
 
   return (
-    <main className='container ml-auto mr-auto px-32'>
-      <div className='flex flex-row items-start'>
-        <header className='sticky top-0  flex  w-1/4 flex-col pt-32 '>
+    <main className='container ml-auto mr-auto px-10  md:px-10 lg:px-32'>
+      <div className='flex flex-col md:flex-row md:items-start '>
+        <header className='top-0 flex  flex-col  pt-32 sm:w-full md:sticky md:w-1/4 '>
           <h1 className='text-5xl font-bold'>Nilton Lopes</h1>
           <h2 className='text-2xl font-medium'>Front end Developer</h2>
           <p className='mt-2 text-slate-300'>
@@ -33,8 +33,8 @@ export default function Home() {
           </div>
         </header>
 
-        <div className='flex-1 pt-32'>
-          <section className='mb-8 flex-1 px-32 text-slate-300'>
+        <div className='flex-1 pt-20 md:px-10 md:pt-32 lg:px-32'>
+          <section className='mb-8 flex-1 text-slate-300 '>
             <h1 className='mb-8 text-2xl font-medium'>About me</h1>
             <p className='mb-3'>
               I'm a front-end developer with 8 years of experience building web
@@ -60,12 +60,12 @@ export default function Home() {
             </p>
           </section>
 
-          <section className='mb-8 px-32 text-slate-300'>
+          <section className='mb-8 flex-1 text-slate-300 '>
             <h1 className='mb-8 text-2xl font-medium'>Experience</h1>
 
             {experiences.map((exp) => {
               return (
-                <article key={exp} className='mb-8 flex flex-row gap-10'>
+                <article key={exp} className='mb-8 flex flex-1 flex-row gap-10'>
                   <div>2019 - present</div>
                   <div className='flex-1'>
                     <h3 className='mb-5 font-bold text-white'>
@@ -77,7 +77,7 @@ export default function Home() {
                       perspiciatis dolor molestiae nostrum dicta. Officia soluta
                       non fuga velit explicabo laborum animi iure!
                     </p>
-                    <div className='mt-5 flex gap-2'>
+                    <div className='mt-5 flex flex-wrap gap-2'>
                       <span className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
                         React
                       </span>
