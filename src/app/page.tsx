@@ -1,9 +1,8 @@
 import { GithubIcon, LinkedinIcon } from './components';
+import { experiences } from './data/experiences';
 
 /* eslint-disable react/no-unescaped-entities */
 export default function Home() {
-  const experiences = Array.from(new Array(4));
-
   return (
     <main className='container ml-auto mr-auto px-10  md:px-10 lg:px-32'>
       <div className='flex flex-col md:flex-row md:items-start '>
@@ -65,42 +64,44 @@ export default function Home() {
 
             {experiences.map((exp) => {
               return (
-                <article key={exp} className='mb-8 flex flex-1 flex-row gap-10'>
-                  <div>2019 - present</div>
+                <article
+                  key={exp.id}
+                  className='mb-8 flex flex-1 flex-row gap-10'
+                >
+                  <div>
+                    {exp.startMonthAndYear} - {exp.endMonthAndYear}
+                  </div>
                   <div className='flex-1'>
                     <h3 className='mb-5 font-bold text-white'>
-                      Front end Developer - RFA Labs
+                      {exp.role} - {exp.company}
                     </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Accusamus ipsam dolore eos aperiam, maiores fugit voluptas
-                      perspiciatis dolor molestiae nostrum dicta. Officia soluta
-                      non fuga velit explicabo laborum animi iure!
-                    </p>
+                    <p>{exp.description}</p>
                     <div className='mt-5 flex flex-wrap gap-2'>
-                      <span className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
-                        React
-                      </span>
-                      <span className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
-                        Next.js
-                      </span>
-                      <span className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
-                        HTML
-                      </span>
-                      <span className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
-                        CSS
-                      </span>
-                      <span className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
-                        Redux
-                      </span>
-                      <span className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
-                        Typescript
-                      </span>
+                      {exp.skills.map((skill) => {
+                        return (
+                          <span
+                            key={skill}
+                            className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '
+                          >
+                            {skill}
+                          </span>
+                        );
+                      })}
                     </div>
                   </div>
                 </article>
               );
             })}
+
+            <div className='mt-5 flex justify-center border-t-2 border-solid border-t-gray-300 pt-5'>
+              <a
+                href='https://www.linkedin.com/in/niltonslf/details/experience/'
+                target='_blank'
+                className='text-md flex items-center rounded-full bg-teal-400/10 px-4 py-2 font-medium leading-5 text-teal-300 '
+              >
+                See all experiences
+              </a>
+            </div>
           </section>
         </div>
       </div>
