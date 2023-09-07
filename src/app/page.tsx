@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { GithubIcon, LinkedinIcon } from './components';
 import { experiences } from './data/experiences';
 
@@ -72,8 +73,17 @@ export default function Home() {
                     {exp.startMonthAndYear} ~ {exp.endMonthAndYear}
                   </div>
                   <div className='flex-1'>
-                    <h3 className='mb-5 font-bold text-white'>
+                    <h3 className='mb-5 flex items-center gap-3 font-bold text-white'>
                       {exp.role} - {exp.company}
+                      {exp.logo && (
+                        <Image
+                          src={`/companies/${exp.logo}`}
+                          alt='Logo'
+                          width={25}
+                          height={25}
+                          className='rounded-full'
+                        />
+                      )}
                     </h3>
                     <p>{exp.description}</p>
                     <div className='mt-5 flex flex-wrap gap-2'>

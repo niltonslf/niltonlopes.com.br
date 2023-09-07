@@ -3,6 +3,7 @@ export const experiences = [
     id: 1,
     role: 'Frontend Developer',
     company: 'RFALabs',
+    logo: 'rfa.jpeg',
     startMonthAndYear: 'May 2019',
     endMonthAndYear: 'Present',
     description:
@@ -23,6 +24,7 @@ export const experiences = [
     id: 2,
     role: 'Senior Frontend Developer',
     company: 'Fluency Academy ',
+    logo: 'fluency.jpeg',
     startMonthAndYear: 'Jan 2022',
     endMonthAndYear: 'Apr 2023',
     description:
@@ -45,6 +47,7 @@ export const experiences = [
     id: 3,
     role: 'Frontend Developer',
     company: 'Pixelwolf ',
+    logo: 'pixelwolf.jpeg',
     startMonthAndYear: 'Oct 2020',
     endMonthAndYear: 'Jan 2022',
     description:
@@ -65,6 +68,7 @@ export const experiences = [
     id: 4,
     role: 'Frontend Developer',
     company: 'MadeiraMadeira',
+    logo: 'madeira.jpeg',
     startMonthAndYear: 'Dec 2019',
     endMonthAndYear: 'Oct 2020',
     description:
