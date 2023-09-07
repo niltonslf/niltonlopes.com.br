@@ -107,7 +107,7 @@ export default function Home() {
               <a
                 href='https://www.linkedin.com/in/niltonslf/details/experience/'
                 target='_blank'
-                className='text-md flex items-center rounded-full bg-teal-400/10 px-4 py-2 font-medium leading-5 text-teal-300 '
+                className='text-md flex items-center rounded-full bg-white px-4 py-2 font-medium leading-5 text-gray-800 '
               >
                 See all experiences
               </a>
