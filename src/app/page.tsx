@@ -7,7 +7,7 @@ export default function Home() {
     <main className='container ml-auto mr-auto px-10  md:px-10 lg:px-32'>
       <div className='flex flex-col md:flex-row md:items-start '>
         <header className='top-0 flex  flex-col  pt-32 sm:w-full md:sticky md:w-1/4 '>
-          <h1 className='text-5xl font-bold'>Nilton Lopes</h1>
+          <h1 className='text-5xl font-extrabold'>Nilton Lopes</h1>
           <h2 className='text-2xl font-medium'>Front end Developer</h2>
           <p className='mt-2 text-slate-300'>
             Creating cool products and providing great user experiences for the
@@ -69,7 +69,7 @@ export default function Home() {
                   className='mb-8 flex flex-1 flex-row gap-10'
                 >
                   <div>
-                    {exp.startMonthAndYear} - {exp.endMonthAndYear}
+                    {exp.startMonthAndYear} ~ {exp.endMonthAndYear}
                   </div>
                   <div className='flex-1'>
                     <h3 className='mb-5 font-bold text-white'>
