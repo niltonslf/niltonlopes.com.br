@@ -2,10 +2,29 @@ export const experiences = [
   {
     id: 1,
     role: 'Frontend Developer',
+    company: `Domino's`,
+    logo: 'dominos.png',
+    startMonthAndYear: 'Feb 2024',
+    endMonthAndYear: 'Present',
+    description:
+      "Maintained dominos.com website for US customers, ensuring smooth operation and implementing new features. Fixed bugs promptly to enhance user experience and drive customer engagement. Collaborated with agile team to prioritize tasks and streamline website updates.",
+    skills: [
+      'React',
+      'HTML',
+      'CSS',
+      'Typescript',
+      'git',
+      'Bitbucket',
+      'Jenkins'
+    ],
+  },
+  {
+    id: 1,
+    role: 'Frontend Developer',
     company: 'RFALabs',
     logo: 'rfa.jpeg',
-    startMonthAndYear: 'May 2019',
-    endMonthAndYear: 'Present',
+    startMonthAndYear: 'May 2023',
+    endMonthAndYear: 'October 2023',
     description:
       "As a Front-end Developer, I'm building out a new platform that makes the mortgage process simple for this Canadian bank. I'm doing that using React.js and Typescript by creating reusable components, implementing new interfaces based on the Figma design, maintaining the code as clean as possible, using azure and git.",
     skills: [
