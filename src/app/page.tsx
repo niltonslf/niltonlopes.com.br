@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { GithubIcon, LinkedinIcon } from './components';
+import { GithubIcon, LinkedinIcon, WorldIcon } from './components';
 import { experiences } from './data/experiences';
 
 /* eslint-disable react/no-unescaped-entities */
@@ -29,6 +29,13 @@ export default function Home() {
               target='_blank'
             >
               <LinkedinIcon />
+            </a>
+            <a
+              href='https://singlebio.link/nill'
+              title='Go to my page'
+              target='_blank'
+            >
+              <WorldIcon />
             </a>
           </div>
         </header>
