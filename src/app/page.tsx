@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { GithubIcon, LinkedinIcon, WorldIcon } from './components';
 import { experiences } from './data/experiences';
+import Link from 'next/link';
 
 /* eslint-disable react/no-unescaped-entities */
 export default function Home() {
@@ -57,13 +58,7 @@ export default function Home() {
               experience.
             </p>
             <p>
-              One project that I particularly enjoyed working on was an
-              application that displayed data from spinning bikes in real time
-              via web sockets. The idea behind it was a dashboard that could
-              display data collected from the bikes on a large screen in the
-              gym. While the athletes were performing the exercises, they could
-              view information such as ranking, average speed, distance, and so
-              forth. To do that, It was used React.js, socket.io and Node.js.
+            The project I've enjoyed the most so far is a platform I'm creating called Singlebio. It's a 'link in bio' platform where users can create their own page, customize it, add their links, and share everything they want with their audience using just one link. On the platform, I'm using various technologies, from React and Next.js as the core, to payment services and data analytics providers. The best part is that this platform is live! You can access it at <Link href='http://singlebio.link/' target='_blank'>singlebio.link</Link>. 
             </p>
           </section>
 
